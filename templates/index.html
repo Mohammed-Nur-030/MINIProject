@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Generator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech Generator</h1>
+        <form id="tts-form">
+            <label for="text">Enter Text:</label>
+            <textarea id="text" name="text" rows="4"></textarea>
+            <label for="fileName">File Name:</label>
+            <input type="text" id="fileName" name="fileName" placeholder="output">
+            <button type="submit">Generate Audio</button>
+        </form>
+        <div id="response"></div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
