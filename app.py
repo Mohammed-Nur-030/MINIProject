@@ -23,8 +23,14 @@ def index():
 @app.route("/generate-audio", methods=["POST"])
 def generate_audio():
     data = request.json
+    print("---------------------------")
+    print("---------------------------")
+    print(data)
+    print("---------------------------")
     text_to_speak = data.get("text")
     file_name = data.get("fileName", "output").replace(" ", "_") + ".mp3"
+    VOICE_ID=data.get("voice_id")
+    print(VOICE_ID)
 
     tts_url = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}/stream"
     headers = {

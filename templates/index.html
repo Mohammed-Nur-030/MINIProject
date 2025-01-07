@@ -11,9 +11,35 @@
         <h1>Text to Speech Generator</h1>
         <form id="tts-form">
             <label for="text">Enter Text:</label>
-            <textarea id="text" name="text" rows="4"></textarea>
+            <textarea id="text" name="text" rows="4" placeholder="Type your text here..."></textarea>
+            
             <label for="fileName">File Name:</label>
             <input type="text" id="fileName" name="fileName" placeholder="output">
+            
+            <label for="voice-dropdown">Select Voice:</label>
+            <select id="voice-dropdown" name="voice">
+                <option value="9BWtsMINqrJLrRacOk9x">Aria</option>
+                <option value="CwhRBWXzGAHq8TQ4Fs17">Roger</option>
+                <option value="EXAVITQu4vr4xnSDxMaL">Sarah</option>
+                <option value="FGY2WhTYpPnrIDTdsKH5">Laura</option>
+                <option value="IKne3meq5aSn9XLyUdCD">Charlie</option>
+                <option value="JBFqnCBsd6RMkjVDRZzb">George</option>
+                <option value="N2lVS1w4EtoT3dr4eOWO">Callum</option>
+                <option value="SAz9YHcvj6GT2YYXdXww">River</option>
+                <option value="TX3LPaxmHKxFdv7VOQHJ">Liam</option>
+                <option value="XB0fDUnXU5powFXDhCwa">Charlotte</option>
+                <option value="Xb7hH8MSUJpSbSDYk0k2">Alice</option>
+                <option value="XrExE9yKIg1WjnnlVkGX">Matilda</option>
+                <option value="bIHbv24MWmeRgasZH58o">Will</option>
+                <option value="cgSgspJ2msm6clMCkdW9">Jessica</option>
+                <option value="cjVigY5qzO86Huf0OWal">Eric</option>
+                <option value="iP95p4xoKVk53GoZ742B">Chris</option>
+                <option value="nPczCjzI2devNBz1zQrb">Brian</option>
+                <option value="onwK4e9ZLuTAKqWW03F9">Daniel</option>
+                <option value="pFZP5JQG7iQjIQuC4Bku">Lily</option>
+                <option value="pqHfZKP75CvOlQylNhV4">Bill</option>
+            </select>
+            
             <button type="submit">Generate Audio</button>
         </form>
         <div id="response"></div>

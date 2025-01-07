@@ -3,8 +3,12 @@ document.getElementById("tts-form").addEventListener("submit", async function (e
 
     const text = document.getElementById("text").value;
     const fileName = document.getElementById("fileName").value;
+   
+    const selectedVoice = document.getElementById("voice-dropdown").value;
+
+    
     const responseDiv = document.getElementById("response");
-    console.log(text,fileName,responseDiv)
+    console.log(text,fileName,responseDiv,selectedVoice)
 
     if (!text.trim()) {
         responseDiv.innerHTML = "Please enter some text!";
@@ -19,7 +23,7 @@ document.getElementById("tts-form").addEventListener("submit", async function (e
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ text, fileName }),
+            body: JSON.stringify({ text, fileName,voice_id }),
         });
 
         const result = await response.json();
